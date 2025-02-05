@@ -4,7 +4,7 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+
 
 int main() {
     printf("**Super Trunfo** \n");
@@ -13,7 +13,7 @@ int main() {
     char estado;
     char codigoCard [50];
     char nomeCidade [50];
-    int populacao;
+    float populacao;
     float area;
     float pib;
     int pontosTuristicos;
@@ -27,17 +27,17 @@ int main() {
     printf("Insira o Código da Carta: \n");
     scanf("%s", &codigoCard);
     
-    printf("Insira o Nome da Cidade: \n");
+    printf("Insira o Nome da Cidade: \n"); // N utilizavel espaço
     scanf(" %s", &nomeCidade);
 
     printf("Insira a População: \n");
-    scanf("%d", &populacao);
+    scanf("%f", &populacao);
 
     printf("Insira a Área: \n");
-    scanf("%.f", &area);
+    scanf("%f", &area);
 
     printf("Insira o PIB: \n");
-    scanf("%.f", &pib);
+    scanf("%f", &pib);
 
     printf("Insira o Numero de Pontos Turísticos: \n");
     scanf("%d", &pontosTuristicos);
@@ -48,9 +48,9 @@ int main() {
     printf("Estado: %c \n", estado);
     printf("Código da Carta: %s \n", codigoCard);
     printf("Nome da cidade: %s \n", nomeCidade);
-    printf("População: %d \n", populacao);
-    printf("Área: %.6f \n", area);
-    printf("PIB: %.5f \n", pib);
+    printf("População: %.2f Milhões \n", populacao);
+    printf("Área: %.3f km² \n", area);
+    printf("PIB: %.2f Bilhões de Reais \n", pib);
     printf("Pontos Turísticos: %d \n", pontosTuristicos);
 
     return 0;
