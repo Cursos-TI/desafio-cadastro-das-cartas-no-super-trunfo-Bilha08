@@ -89,7 +89,7 @@ int main() {
     printf("Código da Carta: %s \n", codigoCard);
     printf("Nome da cidade: %s \n", nomeCidade);
     printf("População: %lu \n", populacao);
-    printf("Área: %.2f km² \n", area);
+    printf("Área: %.3f km² \n", area);
     printf("Densidade populacional: %.2f pessoas por km² \n", densidadePopulacional);
     printf("PIB: %.2f Bilhões de Reais \n", pib);
     printf("PIB per capita: %.2f Reais \n", pib_per_capita);
@@ -101,11 +101,27 @@ int main() {
     printf("Código da Carta: %s \n", codigoCard2);
     printf("Nome da cidade: %s \n", nomeCidade2);
     printf("População: %lu \n", populacao2);
-    printf("Área: %.2f km² \n", area2);
+    printf("Área: %.3f km² \n", area2);
     printf("Densidade populacional: %.2f pessoas por km² \n", densidadePopulacional2);
     printf("PIB: %.2f Bilhões de Reais \n", pib2);
     printf("PIB per capita: %.2f Reais \n", pib_per_capita2);
     printf("Pontos Turísticos: %d \n", pontosTuristicos2);
+
+    //Cálculo do super poder:
+   long double  superCard1 = ((int) populacao + area + pib + pib_per_capita + pontosTuristicos) - densidadePopulacional;
+   long double superCard2 = ((int) populacao2 + area2 + pib2 + pib_per_capita2 + pontosTuristicos2) - densidadePopulacional2;
+
+    //Comparações:
+    printf("\n(VENCEDOR CARTA 1)= 1 - (VENCEDOR CARTA 2)= 0\n");
+
+    printf("\nPopulação 1 > População 2: %d\n", populacao > populacao2);
+    printf("Área 1 > Área 2: %d\n", area > area2);
+    printf("Densidade populacional 1 < Densidade populacional 2: %d \n", densidadePopulacional < densidadePopulacional2);
+    printf("PIB 1 > PIB 2: %d \n", pib > pib2);
+    printf("PIB per capita 1 > PIB per capita 2: %d \n", pib_per_capita > pib_per_capita2);
+    printf("Pontos Turísticos 1 > Pontos Turísticos 2: %d \n", pontosTuristicos > pontosTuristicos2);
+    printf("SUPER PODER CARTA 1 > SUPER PODER CARTA 2: %d \n", superCard1 > superCard2);
+
 
     return 0;
 }
