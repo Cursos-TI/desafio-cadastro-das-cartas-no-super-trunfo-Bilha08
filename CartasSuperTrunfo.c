@@ -12,7 +12,7 @@ int main() {
     char nomeCidade [50], nomeCidade2 [50];
     unsigned long int populacao, populacao2;
     float area, area2;
-    double pib, pib2;
+    float pib, pib2;
     int pontosTuristicos, pontosTuristicos2;
     float densidadePopulacional, densidadePopulacional2;
     float pib_per_capita, pib_per_capita2;
