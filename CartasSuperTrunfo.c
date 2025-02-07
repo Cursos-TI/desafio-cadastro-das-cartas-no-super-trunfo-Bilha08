@@ -4,7 +4,7 @@
 
 int main() {
     printf("**Super Trunfo** \n");
-    printf("\nPRIMEIRA CARTA\n");
+    
     // Definição de variáveis separadas por cada atributo da cidade.
 
     char estado, estado2;
@@ -19,7 +19,7 @@ int main() {
 
 
     // Cadastro da primeira carta:
-    
+    printf("\nPRIMEIRA CARTA\n");
     printf("\nInsira o estado: \n");
     scanf("%c", &estado);
 
